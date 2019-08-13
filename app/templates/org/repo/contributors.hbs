@@ -1,3 +1,8 @@
 <h6>Contributors</h6>
 
-{{outlet}}
+<ul>
+    {{#each model as |contributor|}}
+        {{log contributor}}
+        <li>{{contributor.id}}</li>
+    {{/each}}
+</ul>
