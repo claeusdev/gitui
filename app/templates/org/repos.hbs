@@ -1,9 +1,7 @@
 <h3>{{org.id}}'s Repos</h3>
 <ul>
   {{#each model as |repo|}}
-    <li>
-      {{link-to repo.name "org.repo.issues" repo.name}}
-    </li>
+    {{github-repo repo=repo}}
   {{/each}}
 </ul>
 {{outlet}}
